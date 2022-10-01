@@ -8,7 +8,7 @@ stages:
     jobs:
       - job: TerrafromTasks
         displayName: Terraform Tasks
-        pool: myAgentPool
+        pool: myAgent
         steps:
         - task: DownloadSecureFile@1
           displayName: Download azsecret.conf file
@@ -40,7 +40,7 @@ stages:
             backendType: 'azurerm'
             backendServiceArm: 'service-connection-azurerm'
             backendAzureRmResourceGroupName: 'Azuredevops'
-            backendAzureRmStorageAccountName: 'tfstate22720'
+            backendAzureRmStorageAccountName: 'tfstate14062'
             backendAzureRmContainerName: 'tfstate'
             allowTelemetryCollection: true
           
